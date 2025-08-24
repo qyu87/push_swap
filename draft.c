@@ -6,7 +6,7 @@
 /*   By: qfoo <qfoo@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 15:14:11 by qfoo              #+#    #+#             */
-/*   Updated: 2025/08/24 19:00:21 by qfoo             ###   ########.fr       */
+/*   Updated: 2025/08/24 20:45:14 by qfoo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,30 +39,7 @@ int main(int argc, char **argv)
 //need to check within string "1 2 3" and wihtout string "1" "2" "3"
 int	check_valid(int argc, char **argv)
 {
-	int	i;
-	int j;
-	
-	if (argc < 1)
-	{
-		write(2, "Error\n", 6); // set fd to 2 cuz subject say display on standard error
-		exit(1); // terminate with error
-	}
-	// check dupe
-	i = 0;
-	while (argv[i])
-	{
-		j = 0;
-		while (argv[i][j])
-		{
-			if (argv[i][j] == argv[i][j + 1])
-			{
-				write(2, "Error\n", 6);
-				exit(1);
-			}
-			j++;
-		}
-		i++;
-	}
+
 }
 
 int	check_dup()
